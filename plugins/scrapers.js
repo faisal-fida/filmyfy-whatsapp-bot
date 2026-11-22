@@ -38,8 +38,8 @@ const ID3Writer = require('browser-id3-writer');
 const SpotifyWebApi = require('spotify-web-api-node');
 
 const spotifyApi = new SpotifyWebApi({
-    clientId: 'acc6302297e040aeb6e4ac1fbdfd62c3',
-    clientSecret: '0e8439a1280a43aba9a5bc0a16f3f009'
+    clientId: config.SPOTIFY_CLIENT_ID,
+    clientSecret: config.SPOTIFY_CLIENT_SECRET
 });
 //=====================================================================================
 const Language = require('../language');

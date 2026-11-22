@@ -49,7 +49,9 @@ module.exports = {
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
-    WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
+    WITAI_API: process.env.WITAI_API_KEY === undefined ? '' : process.env.WITAI_API_KEY,
+    SPOTIFY_CLIENT_ID: process.env.SPOTIFY_CLIENT_ID === undefined ? '' : process.env.SPOTIFY_CLIENT_ID,
+    SPOTIFY_CLIENT_SECRET: process.env.SPOTIFY_CLIENT_SECRET === undefined ? '' : process.env.SPOTIFY_CLIENT_SECRET,
     SUPPORT: "905524317852-1612300121",
     SUPPORT2: "905511384572-1617736751",
     SUPPORT3: "905511384572-1621015274"
